@@ -4,6 +4,18 @@ This is a simple budgeting app that allows you to track your expenses and income
 
 ## Developing
 
+### Pre-requisites
+
+- [Node.js](https://nodejs.org/)
+- [pnpm](https://pnpm.io/)
+- [Rust](https://www.rust-lang.org/)
+
+#### Rust
+
+The recommended way to install Rust is via [rustup](https://rustup.rs/).
+
+### Running the SvelteKit development server
+
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
@@ -13,7 +25,7 @@ npm run dev
 npm run dev -- --open
 ```
 
-### Running the Tauri app
+### Running the Tauri app in development mode
 
 To start up the Tauri application, run the following command:
 
