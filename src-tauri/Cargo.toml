@@ -5,7 +5,7 @@ description = "A budgeting application for the next month."
 authors = ["Christoff Linde", "Cahil Henry - Leyte"]
 license = ""
 repository = "https://github.com/SchizzY/next-month-web"
-default-run = "app"
+default-run = "next-month"
 edition = "2021"
 rust-version = "1.60"
 
