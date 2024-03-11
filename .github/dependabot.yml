@@ -18,7 +18,6 @@ updates:
       - 'octocat'
       - 'christoff-linde'
       - 'SchizzY'
-    versioning-strategy: 'increase-if-necessary'
     open-pull-requests-limit: 5
   - package-ecosystem: 'npm' # See documentation for possible values
     directory: '/' # Location of package manifests
@@ -55,7 +54,7 @@ updates:
       - 'octocat'
       - 'christoff-linde'
       - 'SchizzY'
-    versioning-strategy: 'increase-if-necessary'
+    versioning-strategy: 'auto'
     open-pull-requests-limit: 5
     commit-message:
       prefix: "cargo "
