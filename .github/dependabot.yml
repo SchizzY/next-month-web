@@ -31,3 +31,20 @@ updates:
         dependency-type: 'production'
       dev-deps:
         dependency-type: 'development'
+  - package-ecosystem: "cargo" # See documentation for possible values
+    directory: "src-tauri/" # Location of package manifests
+    assignees:
+      - 'octocat'
+    schedule:
+      interval: "daily"
+    labels:
+      - "cargo"
+      - "dependencies"
+    commit-message:
+      prefix: "cargo "
+      include: "scope"
+    groups:
+      prod-deps:
+        dependency-type: 'production'
+      dev-deps:
+        dependency-type: 'development'
