@@ -9,10 +9,20 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
+    labels:
+      - 'dependencies'
+      - 'github-actions'
+    commit-message:
+      prefix: 'gh'
+    reviewers:
+      - 'octocat'
+      - 'christoff-linde'
+      - 'SchizzY'
+    open-pull-requests-limit: 5
   - package-ecosystem: 'npm' # See documentation for possible values
     directory: '/' # Location of package manifests
     schedule:
-      interval: 'monthly'
+      interval: 'weekly'
     assignees:
       - 'octocat'
     labels:
@@ -36,10 +46,15 @@ updates:
     assignees:
       - 'octocat'
     schedule:
-      interval: "daily"
+      interval: "weekly"
     labels:
       - "cargo"
       - "dependencies"
+    reviewers:
+      - 'octocat'
+      - 'christoff-linde'
+      - 'SchizzY'
+    open-pull-requests-limit: 5
     commit-message:
       prefix: "cargo "
       include: "scope"
