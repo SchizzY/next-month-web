@@ -1,6 +1,7 @@
 <script lang="ts">
 	import * as Command from '$lib/components/ui/command';
 	import { cn } from '$lib/utils';
+	import { goto } from '$app/navigation';
 
 	let isDashboardActive = false;
 
@@ -9,11 +10,11 @@
 	}
 
 	const handleDashboardRoute = () => {
-		window.location.href = '/dashboard';
+		goto('/dashboard');
 	};
 
 	const handleAdminRoute = () => {
-		window.location.href = '/admin';
+		goto('/admin');
 	};
 </script>
 
