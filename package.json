@@ -38,10 +38,15 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@clerk/clerk-js": "^4.70.3",
+		"@unovis/svelte": "^1.3.5",
 		"bits-ui": "^0.19.5",
+		"clerk-sveltekit": "^0.4.1",
 		"clsx": "^2.1.0",
+		"cmdk-sv": "^0.0.15",
 		"lucide-svelte": "^0.350.0",
 		"tailwind-merge": "^2.2.1",
-		"tailwind-variants": "^0.2.0"
+		"tailwind-variants": "^0.2.0",
+		"vaul-svelte": "^0.2.4"
 	}
 }
