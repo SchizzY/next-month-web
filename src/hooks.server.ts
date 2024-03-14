@@ -6,7 +6,7 @@ import { handleClerk } from 'clerk-sveltekit/server'
 export const handle: Handle = sequence(
 	handleClerk(PRIVATE_CLERK_SECRET_KEY, {
 		debug: true,
-		protectedPaths: ['/admin', '/dashboard'],
+		// protectedPaths: ['/admin', '/dashboard'],
 		signInUrl: '/',
 	})
 )

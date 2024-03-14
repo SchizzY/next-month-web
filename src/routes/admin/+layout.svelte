@@ -23,7 +23,7 @@
 		goto('/');
 	};
 </script>
-
+<SignedIn>
 <div class="flex h-full bg-black">
 	<div class="h-screen w-[20%]">
 		<Command.Root>
@@ -34,9 +34,9 @@
 						class={cn({ 'bg-green-300': isDashboardActive })}>Dashboard</Command.Item
 					>
 					<Command.Item onSelect={handleAdminRoute}>Account</Command.Item>
-					<SignedIn>
+					
 						<Command.Item><SignOutButton {signOutCallback} /></Command.Item>
-					</SignedIn>
+					
 				</Command.Group>
 			</Command.List>
 		</Command.Root>
@@ -45,3 +45,4 @@
 		<slot />
 	</div>
 </div>
+</SignedIn>
