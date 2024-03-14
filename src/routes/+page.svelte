@@ -1,13 +1,12 @@
 <script>
-  import Button from "$lib/components/ui/button/button.svelte";
-
-  $: count = 0;
+	import SignIn from 'clerk-sveltekit/client/SignIn.svelte';
 </script>
 
-<div class="p-6">
-  <h1 class="text-4xl font-bold">Welcome to SvelteKit</h1>
-  <p class="italic">Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-
-  <Button class="mt-2" on:click={() => count += 1}>Clicks: {count}</Button>
+<div class="flex h-screen bg-gradient-to-r from-gray-700 via-gray-700 to-slate-900">
+	<div class="container mx-auto flex flex-col items-center justify-center">
+		<h1 class="flex w-full items-center justify-center p-6 font-lobster text-[60px] text-slate-400">
+			Next Month
+		</h1>
+		<SignIn redirectUrl="/dashboard" />
+	</div>
 </div>
-

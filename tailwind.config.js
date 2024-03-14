@@ -55,7 +55,9 @@ const config = {
 				sm: "calc(var(--radius) - 4px)"
 			},
 			fontFamily: {
-				sans: [...fontFamily.sans]
+				sans: [...fontFamily.sans],
+				poppins: ["Poppins", ...fontFamily.sans],
+				lobster: ["Lobster"]
 			}
 		}
 	},
