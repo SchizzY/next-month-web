@@ -2,3 +2,6 @@
 pnpm-lock.yaml
 package-lock.json
 yarn.lock
+
+# Tauri related files
+src-tauri/target/**/*
