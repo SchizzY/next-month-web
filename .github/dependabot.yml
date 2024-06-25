@@ -5,66 +5,42 @@
 
 version: 2
 updates:
-  - package-ecosystem: 'github-actions'
-    directory: '/'
-    schedule:
-      interval: 'weekly'
-    labels:
-      - 'dependencies'
-      - 'github-actions'
-    commit-message:
-      prefix: 'gh'
-    reviewers:
-      - 'octocat'
-      - 'christoff-linde'
-      - 'SchizzY'
-      - 'seanloock'
-    open-pull-requests-limit: 5
-  - package-ecosystem: 'npm' # See documentation for possible values
-    directory: '/' # Location of package manifests
-    schedule:
-      interval: 'weekly'
-    assignees:
-      - 'octocat'
-    labels:
-      - 'dependencies'
-      - 'npm' 
-    commit-message:
-      # Prefix all commit messages with "npm: "
-      prefix: 'npm'
-    reviewers:
-      - 'octocat'
-      - 'christoff-linde'
-      - 'SchizzY'
-      - 'seanloock'
-    open-pull-requests-limit: 5
-    versioning-strategy: 'increase-if-necessary'
-    groups:
-      prod-deps:
-        dependency-type: 'production'
-      dev-deps:
-        dependency-type: 'development'
-  - package-ecosystem: "cargo" # See documentation for possible values
-    directory: "src-tauri/" # Location of package manifests
-    assignees:
-      - 'octocat'
+  - package-ecosystem: "github-actions"
+    directory: "/"
     schedule:
       interval: "weekly"
     labels:
-      - "cargo"
       - "dependencies"
-    reviewers:
-      - 'octocat'
-      - 'christoff-linde'
-      - 'SchizzY'
-      - 'seanloock'
-    versioning-strategy: 'auto'
-    open-pull-requests-limit: 5
+      - "github-actions"
     commit-message:
-      prefix: "cargo "
-      include: "scope"
+      prefix: "gh"
+    reviewers:
+      - "octocat"
+      - "christoff-linde"
+      - "SchizzY"
+      - "seanloock"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "weekly"
+    assignees:
+      - "octocat"
+    labels:
+      - "dependencies"
+      - "npm"
+    commit-message:
+      # Prefix all commit messages with "npm: "
+      prefix: "npm"
+    reviewers:
+      - "octocat"
+      - "christoff-linde"
+      - "SchizzY"
+      - "seanloock"
+    open-pull-requests-limit: 5
+    versioning-strategy: "increase-if-necessary"
     groups:
       prod-deps:
-        dependency-type: 'production'
+        dependency-type: "production"
       dev-deps:
-        dependency-type: 'development'
+        dependency-type: "development"
